@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Tools - Your Digital Toolkit</title>
+    <meta name="description" content="A comprehensive collection of useful web tools including QR generator, image resizer, password generator, and more.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <i class="fas fa-tools"></i>
+                <span>AllTools</span>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#tools" class="nav__link">Tools</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="download-btn" id="download-html" aria-label="Download HTML">
+                    <i class="fas fa-download"></i>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="container">
+                <div class="home__content">
+                    <h1 class="home__title">
+                        Your Complete <span class="gradient-text">Digital Toolkit</span>
+                    </h1>
+                    <p class="home__description">
+                        Access powerful, fast, and secure tools right in your browser. 
+                        No downloads, no sign-ups, just instant productivity.
+                    </p>
+                    <a href="#tools" class="btn btn--primary">
+                        Explore Tools <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="home__image">
+                    <div class="home__blob">
+                        <img src="profile-image.jpg" alt="Profile Picture" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section class="tools section" id="tools">
+            <div class="container">
+                <h2 class="section__title">Available Tools</h2>
+                <p class="section__subtitle">Choose from our collection of powerful utilities</p>
+                
+                <div class="tools__grid">
+                    <!-- QR Code Generator -->
+                    <div class="tool-card" data-tool="qr-generator">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h3 class="tool-card__title">QR Code Generator</h3>
+                        <p class="tool-card__description">Generate QR codes from text or URLs instantly</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- Image Resizer -->
+                    <div class="tool-card" data-tool="image-resizer">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3 class="tool-card__title">Image Resizer</h3>
+                        <p class="tool-card__description">Resize images to your desired dimensions</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- Password Generator -->
+                    <div class="tool-card" data-tool="password-generator">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3 class="tool-card__title">Password Generator</h3>
+                        <p class="tool-card__description">Create secure passwords with custom options</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- Unit Converter -->
+                    <div class="tool-card" data-tool="unit-converter">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-ruler"></i>
+                        </div>
+                        <h3 class="tool-card__title">Unit Converter</h3>
+                        <p class="tool-card__description">Convert between different length units</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- Text Reverser -->
+                    <div class="tool-card" data-tool="text-reverser">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3 class="tool-card__title">Text Reverser</h3>
+                        <p class="tool-card__description">Reverse any text string instantly</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- Word Counter -->
+                    <div class="tool-card" data-tool="word-counter">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="tool-card__title">Word Counter</h3>
+                        <p class="tool-card__description">Count words, characters, and spaces</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- Color Picker -->
+                    <div class="tool-card" data-tool="color-picker">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="tool-card__title">Color Picker</h3>
+                        <p class="tool-card__description">Pick colors and get HEX/RGB values</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- Age Calculator -->
+                    <div class="tool-card" data-tool="age-calculator">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="tool-card__title">Age Calculator</h3>
+                        <p class="tool-card__description">Calculate your exact age in years, months, days</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- BMI Calculator -->
+                    <div class="tool-card" data-tool="bmi-calculator">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-weight"></i>
+                        </div>
+                        <h3 class="tool-card__title">BMI Calculator</h3>
+                        <p class="tool-card__description">Calculate Body Mass Index and health category</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- Number Randomizer -->
+                    <div class="tool-card" data-tool="number-randomizer">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-dice"></i>
+                        </div>
+                        <h3 class="tool-card__title">Number Randomizer</h3>
+                        <p class="tool-card__description">Generate random numbers within a range</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- URL Shortener -->
+                    <div class="tool-card" data-tool="url-shortener">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3 class="tool-card__title">URL Shortener</h3>
+                        <p class="tool-card__description">Create short, memorable URLs from long ones</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- Base64 Encoder/Decoder -->
+                    <div class="tool-card" data-tool="base64-converter">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="tool-card__title">Base64 Converter</h3>
+                        <p class="tool-card__description">Encode and decode Base64 strings</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+
+                    <!-- JSON Formatter -->
+                    <div class="tool-card" data-tool="json-formatter">
+                        <div class="tool-card__icon">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <h3 class="tool-card__title">JSON Formatter</h3>
+                        <p class="tool-card__description">Format, validate, and minify JSON data</p>
+                        <button class="tool-card__btn">Use Tool</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">About AllTools</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>AllTools is a comprehensive collection of web-based utilities designed to make your digital life easier. All tools run entirely in your browser, ensuring your data stays private and secure.</p>
+                        <p>Our tools are built with modern web technologies, optimized for performance, and designed to work seamlessly across all devices.</p>
+                        <div class="about__features">
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>100% Client-Side</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bolt"></i>
+                                <span>Lightning Fast</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Mobile Friendly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Get in Touch</h2>
+                <div class="contact__content">
+                    <p>Have suggestions for new tools or found a bug? We'd love to hear from you!</p>
+                    <div class="contact__links">
+                        <a href="mailto:barikrakesh310@gmail.com" class="contact__link">
+                            <i class="fas fa-envelope"></i>
+                            barikrakesh310@gmail.com
+                        </a>
+                        <a href="https://github.com/rakeshbarik123" class="contact__link">
+                            <i class="fab fa-github"></i>
+                            rakeshbarik123
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Tool Modals -->
+    <div class="modal-overlay" id="modal-overlay">
+        <!-- QR Code Generator Modal -->
+        <div class="modal" id="qr-generator-modal">
+            <div class="modal__header">
+                <h3>QR Code Generator</h3>
+                <button class="modal__close" data-close="qr-generator-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="form-group">
+                    <label for="qr-input">Enter text or URL:</label>
+                    <textarea id="qr-input" placeholder="Enter text or URL to generate QR code"></textarea>
+                </div>
+                <button class="btn btn--primary" id="generate-qr">Generate QR Code</button>
+                <div class="result-area" id="qr-result">
+                    <canvas id="qr-canvas"></canvas>
+                    <button class="btn btn--secondary" id="download-qr" style="display: none;">
+                        <i class="fas fa-download"></i> Download PNG
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Resizer Modal -->
+        <div class="modal" id="image-resizer-modal">
+            <div class="modal__header">
+                <h3>Image Resizer</h3>
+                <button class="modal__close" data-close="image-resizer-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="form-group">
+                    <label for="image-upload">Select Image:</label>
+                    <input type="file" id="image-upload" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="max-width">Max Width (px):</label>
+                    <input type="number" id="max-width" placeholder="800" min="1" max="5000">
+                </div>
+                <button class="btn btn--primary" id="resize-image">Resize Image</button>
+                <div class="result-area" id="image-result">
+                    <canvas id="image-canvas"></canvas>
+                    <button class="btn btn--secondary" id="download-image" style="display: none;">
+                        <i class="fas fa-download"></i> Download Resized Image
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Password Generator Modal -->
+        <div class="modal" id="password-generator-modal">
+            <div class="modal__header">
+                <h3>Password Generator</h3>
+                <button class="modal__close" data-close="password-generator-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="form-group">
+                    <label for="password-length">Password Length:</label>
+                    <input type="range" id="password-length" min="4" max="50" value="12">
+                    <span id="length-display">12</span>
+                </div>
+                <div class="form-group">
+                    <label>Include:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox">
+                            <input type="checkbox" id="include-uppercase" checked>
+                            <span>Uppercase (A-Z)</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="include-lowercase" checked>
+                            <span>Lowercase (a-z)</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="include-numbers" checked>
+                            <span>Numbers (0-9)</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="include-symbols">
+                            <span>Symbols (!@#$%)</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn--primary" id="generate-password">Generate Password</button>
+                <div class="result-area" id="password-result">
+                    <input type="text" id="generated-password" readonly>
+                    <button class="btn btn--secondary" id="copy-password">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Unit Converter Modal -->
+        <div class="modal" id="unit-converter-modal">
+            <div class="modal__header">
+                <h3>Unit Converter</h3>
+                <button class="modal__close" data-close="unit-converter-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="converter-grid">
+                    <div class="form-group">
+                        <label for="from-value">From:</label>
+                        <input type="number" id="from-value" placeholder="Enter value">
+                        <select id="from-unit">
+                            <option value="m">Meters (m)</option>
+                            <option value="cm">Centimeters (cm)</option>
+                            <option value="km">Kilometers (km)</option>
+                            <option value="ft">Feet (ft)</option>
+                            <option value="in">Inches (in)</option>
+                            <option value="yd">Yards (yd)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="to-value">To:</label>
+                        <input type="number" id="to-value" readonly>
+                        <select id="to-unit">
+                            <option value="m">Meters (m)</option>
+                            <option value="cm">Centimeters (cm)</option>
+                            <option value="km">Kilometers (km)</option>
+                            <option value="ft">Feet (ft)</option>
+                            <option value="in">Inches (in)</option>
+                            <option value="yd">Yards (yd)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Reverser Modal -->
+        <div class="modal" id="text-reverser-modal">
+            <div class="modal__header">
+                <h3>Text Reverser</h3>
+                <button class="modal__close" data-close="text-reverser-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="form-group">
+                    <label for="text-input">Enter text to reverse:</label>
+                    <textarea id="text-input" placeholder="Type your text here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="reversed-text">Reversed text:</label>
+                    <textarea id="reversed-text" readonly></textarea>
+                </div>
+                <button class="btn btn--secondary" id="copy-reversed">
+                    <i class="fas fa-copy"></i> Copy Reversed Text
+                </button>
+            </div>
+        </div>
+
+        <!-- Word Counter Modal -->
+        <div class="modal" id="word-counter-modal">
+            <div class="modal__header">
+                <h3>Word & Character Counter</h3>
+                <button class="modal__close" data-close="word-counter-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="form-group">
+                    <label for="text-to-count">Enter text:</label>
+                    <textarea id="text-to-count" placeholder="Type or paste your text here..."></textarea>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" id="word-count">0</span>
+                        <span class="stat-label">Words</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="char-count">0</span>
+                        <span class="stat-label">Characters</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="char-no-spaces">0</span>
+                        <span class="stat-label">Characters (no spaces)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="paragraph-count">0</span>
+                        <span class="stat-label">Paragraphs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color Picker Modal -->
+        <div class="modal" id="color-picker-modal">
+            <div class="modal__header">
+                <h3>Color Picker</h3>
+                <button class="modal__close" data-close="color-picker-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="color-picker-container">
+                    <input type="color" id="color-input" value="#3b82f6">
+                    <div class="color-preview" id="color-preview"></div>
+                </div>
+                <div class="color-values">
+                    <div class="form-group">
+                        <label for="hex-value">HEX:</label>
+                        <input type="text" id="hex-value" readonly>
+                        <button class="btn btn--small" onclick="copyToClipboard('hex-value')">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label for="rgb-value">RGB:</label>
+                        <input type="text" id="rgb-value" readonly>
+                        <button class="btn btn--small" onclick="copyToClipboard('rgb-value')">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Age Calculator Modal -->
+        <div class="modal" id="age-calculator-modal">
+            <div class="modal__header">
+                <h3>Age Calculator</h3>
+                <button class="modal__close" data-close="age-calculator-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="form-group">
+                    <label for="birth-date">Date of Birth:</label>
+                    <input type="date" id="birth-date">
+                </div>
+                <button class="btn btn--primary" id="calculate-age">Calculate Age</button>
+                <div class="result-area" id="age-result">
+                    <div class="age-display">
+                        <div class="age-item">
+                            <span class="age-number" id="years">0</span>
+                            <span class="age-label">Years</span>
+                        </div>
+                        <div class="age-item">
+                            <span class="age-number" id="months">0</span>
+                            <span class="age-label">Months</span>
+                        </div>
+                        <div class="age-item">
+                            <span class="age-number" id="days">0</span>
+                            <span class="age-label">Days</span>
+                        </div>
+                    </div>
+                    <div class="age-details" id="age-details"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BMI Calculator Modal -->
+        <div class="modal" id="bmi-calculator-modal">
+            <div class="modal__header">
+                <h3>BMI Calculator</h3>
+                <button class="modal__close" data-close="bmi-calculator-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" placeholder="170" min="1" max="300">
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="70" min="1" max="500">
+                </div>
+                <button class="btn btn--primary" id="calculate-bmi">Calculate BMI</button>
+                <div class="result-area" id="bmi-result">
+                    <div class="bmi-display">
+                        <span class="bmi-number" id="bmi-value">0</span>
+                        <span class="bmi-category" id="bmi-category">Normal</span>
+                    </div>
+                    <div class="bmi-chart">
+                        <div class="bmi-range underweight">
+                            <span>Underweight</span>
+                            <span>&lt; 18.5</span>
+                        </div>
+                        <div class="bmi-range normal">
+                            <span>Normal</span>
+                            <span>18.5 - 24.9</span>
+                        </div>
+                        <div class="bmi-range overweight">
+                            <span>Overweight</span>
+                            <span>25 - 29.9</span>
+                        </div>
+                        <div class="bmi-range obese">
+                            <span>Obese</span>
+                            <span>&gt; 30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Number Randomizer Modal -->
+        <div class="modal" id="number-randomizer-modal">
+            <div class="modal__header">
+                <h3>Number Randomizer</h3>
+                <button class="modal__close" data-close="number-randomizer-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="form-group">
+                    <label for="min-number">Minimum:</label>
+                    <input type="number" id="min-number" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="max-number">Maximum:</label>
+                    <input type="number" id="max-number" value="100">
+                </div>
+                <button class="btn btn--primary" id="generate-number">Generate Random Number</button>
+                <div class="result-area" id="number-result">
+                    <div class="random-number" id="random-number">0</div>
+                    <button class="btn btn--secondary" id="generate-again">Generate Again</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- URL Shortener Modal -->
+        <div class="modal" id="url-shortener-modal">
+            <div class="modal__header">
+                <h3>URL Shortener</h3>
+                <button class="modal__close" data-close="url-shortener-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="form-group">
+                    <label for="long-url">Enter URL to shorten:</label>
+                    <input type="url" id="long-url" placeholder="https://example.com/very/long/url">
+                </div>
+                <div class="form-group">
+                    <label for="custom-alias">Custom alias (optional):</label>
+                    <input type="text" id="custom-alias" placeholder="my-link" maxlength="20">
+                </div>
+                <button class="btn btn--primary" id="shorten-url">Shorten URL</button>
+                <div class="result-area" id="url-result" style="display: none;">
+                    <div class="form-group">
+                        <label for="shortened-url">Shortened URL:</label>
+                        <input type="text" id="shortened-url" readonly>
+                        <button class="btn btn--secondary" id="copy-short-url">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="url-stats">
+                        <p><strong>Original:</strong> <span id="original-length">0</span> characters</p>
+                        <p><strong>Shortened:</strong> <span id="shortened-length">0</span> characters</p>
+                        <p><strong>Saved:</strong> <span id="saved-chars">0</span> characters</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Base64 Converter Modal -->
+        <div class="modal" id="base64-converter-modal">
+            <div class="modal__header">
+                <h3>Base64 Converter</h3>
+                <button class="modal__close" data-close="base64-converter-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="converter-tabs">
+                    <button class="tab-btn active" data-tab="encode">Encode</button>
+                    <button class="tab-btn" data-tab="decode">Decode</button>
+                </div>
+                <div class="tab-content active" id="encode-tab">
+                    <div class="form-group">
+                        <label for="text-to-encode">Text to encode:</label>
+                        <textarea id="text-to-encode" placeholder="Enter text to encode to Base64"></textarea>
+                    </div>
+                    <button class="btn btn--primary" id="encode-base64">Encode to Base64</button>
+                    <div class="form-group">
+                        <label for="encoded-result">Base64 result:</label>
+                        <textarea id="encoded-result" readonly></textarea>
+                        <button class="btn btn--secondary" id="copy-encoded">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+                <div class="tab-content" id="decode-tab">
+                    <div class="form-group">
+                        <label for="base64-to-decode">Base64 to decode:</label>
+                        <textarea id="base64-to-decode" placeholder="Enter Base64 string to decode"></textarea>
+                    </div>
+                    <button class="btn btn--primary" id="decode-base64">Decode from Base64</button>
+                    <div class="form-group">
+                        <label for="decoded-result">Decoded result:</label>
+                        <textarea id="decoded-result" readonly></textarea>
+                        <button class="btn btn--secondary" id="copy-decoded">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JSON Formatter Modal -->
+        <div class="modal" id="json-formatter-modal">
+            <div class="modal__header">
+                <h3>JSON Formatter</h3>
+                <button class="modal__close" data-close="json-formatter-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="json-actions">
+                    <button class="btn btn--primary" id="format-json">Format</button>
+                    <button class="btn btn--secondary" id="minify-json">Minify</button>
+                    <button class="btn btn--secondary" id="validate-json">Validate</button>
+                    <button class="btn btn--secondary" id="clear-json">Clear</button>
+                </div>
+                <div class="form-group">
+                    <label for="json-input">JSON Input:</label>
+                    <textarea id="json-input" placeholder='{"name": "example", "data": [1, 2, 3]}'></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="json-output">Formatted Output:</label>
+                    <textarea id="json-output" readonly></textarea>
+                    <button class="btn btn--secondary" id="copy-json">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="json-info" id="json-info"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <i class="fas fa-tools"></i>
+                    <span>AllTools</span>
+                </div>
+                <p class="footer__text">
+                    Built with ❤️ for productivity enthusiasts. All tools run locally in your browser.
+                </p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Privacy</a>
+                    <a href="#" class="footer__link">Terms</a>
+                    <a href="#" class="footer__link">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
